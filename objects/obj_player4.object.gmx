@@ -30,12 +30,13 @@
 draw_self();
 
 sprite_index = spr_player;
-image_index = 0;
+image_index = 3;
 image_speed = 0;
 
 hor = 0;
 ver = 0;
 speed_move = 8;
+gamepad_set_axis_deadzone(2, 0.3);
 
 weapon = 1;
 damage = 4;
@@ -69,8 +70,8 @@ timer = bulletspawnwait;
             <kind>1</kind>
             <string>///gets keyboard input
 
-hor = keyboard_check(vk_right) - keyboard_check(vk_left);
-ver = keyboard_check(vk_down) - keyboard_check(vk_up);
+hor = gamepad_axis_value(2, gp_axislh);
+ver = gamepad_axis_value(2, gp_axislv);
 </string>
           </argument>
         </arguments>
@@ -101,11 +102,11 @@ if(timer == 0)
 {
 bullet = instance_create(x, y, obj_bullet);
 bullet.damage = damage;
-bullet.player = 1;
+bullet.player = 4;
 with (bullet){
-    hor = gamepad_axis_value(0, gp_axisrh);
-    ver = gamepad_axis_value(0, gp_axisrv);
-    direction= point_direction(x, y, mouse_x, mouse_y);
+    hor = gamepad_axis_value(2, gp_axisrh);
+    ver = gamepad_axis_value(2, gp_axisrv);
+    direction= point_direction(0, 0, hor, ver);
 }
 
 timer = bulletspawnwait;
