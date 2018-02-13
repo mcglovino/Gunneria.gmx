@@ -10,6 +10,10 @@
     <sprite>sprites\spr_target</sprite>
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_weapon</sprite>
+    <sprite>sprites\spr_smellyboi</sprite>
+    <sprite>sprites\spri_veiny_small</sprite>
+    <sprite>sprites\spr_veiny_big</sprite>
+    <sprite>sprites\spr_tissue_boi</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -24,6 +28,9 @@
     <object>objects\obj_machinegun_collectale</object>
     <object>objects\obj_sniper_collectable</object>
     <object>objects\obj_block</object>
+    <object>objects\obj_sock</object>
+    <object>objects\obj_tissue</object>
+    <object>objects\obj_wall__small</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rom_game</room>
