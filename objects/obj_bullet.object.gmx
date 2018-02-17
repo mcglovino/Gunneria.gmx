@@ -135,6 +135,7 @@ player = 1;
             <string>if(player != 2)
 {
     other.hp -= damage;
+    instance_destroy();
 }
 
 </string>
@@ -162,6 +163,7 @@ player = 1;
             <string>if(player != 4)
 {
     other.hp -= damage;
+    instance_destroy();
 }
 
 </string>
@@ -189,6 +191,7 @@ player = 1;
             <string>if(player != 3)
 {
     other.hp -= damage;
+    instance_destroy();
 }
 </string>
           </argument>
@@ -215,6 +218,7 @@ player = 1;
             <string>if(player != 1)
 {
     other.hp -= damage;
+    instance_destroy();
 }
 
 </string>
