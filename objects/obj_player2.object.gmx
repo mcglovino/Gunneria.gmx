@@ -142,13 +142,13 @@ switch (weapon){
     break;
     case 2:
     //machine gun
-    bulletspawnwait = 3;
+    bulletspawnwait = 4;
     damage = 1;
     break;
     case 3:
     //sniper
     bulletspawnwait = 20;
-    damage = 6;
+    damage = 7;
     break;
 }
 
