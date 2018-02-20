@@ -49,8 +49,6 @@
           <argument>
             <kind>1</kind>
             <string>other.weapon = 1;
-other.damage = 4;
-
 </string>
           </argument>
         </arguments>
@@ -74,8 +72,6 @@ other.damage = 4;
           <argument>
             <kind>1</kind>
             <string>other.weapon = 1;
-other.damage = 4;
-
 </string>
           </argument>
         </arguments>
@@ -99,8 +95,6 @@ other.damage = 4;
           <argument>
             <kind>1</kind>
             <string>other.weapon = 1;
-other.damage = 4;
-
 </string>
           </argument>
         </arguments>
@@ -124,8 +118,6 @@ other.damage = 4;
           <argument>
             <kind>1</kind>
             <string>other.weapon = 1;
-other.damage = 4;
-
 </string>
           </argument>
         </arguments>

@@ -40,6 +40,7 @@ speed_move = 8;
 weapon = 1;
 damage = 4;
 hp = 20;
+shot_by = 0;
 
 bulletspawnwait = 10;
 
@@ -110,21 +111,41 @@ with (bullet){
 
 timer = bulletspawnwait;
 }
-show_debug_message(hp);
 if(hp &lt;= 0){
+switch(shot_by)
+    {
+        case 1:
+            obj_player1.score += 1;
+            break;
+        case 2:
+            obj_player2.score += 1;
+            break;
+        case 3:
+            obj_player3.score += 1;
+            break;
+        case 4:
+            obj_player4.score += 1;
+            break;
+    }
     instance_destroy();
 }
 
 switch (weapon){
-case 1:
-bulletspawnwait = 10;
-break;
-case 2:
-bulletspawnwait = 3;
-break;
-case 3:
-bulletspawnwait = 20;
-break;
+    case 1:
+    //pistol
+    bulletspawnwait = 10;
+    damage = 4;
+    break;
+    case 2:
+    //machine gun
+    bulletspawnwait = 3;
+    damage = 1;
+    break;
+    case 3:
+    //sniper
+    bulletspawnwait = 20;
+    damage = 6;
+    break;
 }
 
 
@@ -201,8 +222,10 @@ if(place_free(x+hor_move,y+ver_move)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
-draw_text(x, y + 20, hp);
+            <string>///drawtext
+draw_self();
+draw_text(x + 5, y + 25, hp);
+draw_text(x - 25, y + 25, score);
 </string>
           </argument>
         </arguments>
