@@ -14,9 +14,13 @@
     <sprite>sprites\spr_veiny_big</sprite>
     <sprite>sprites\spr_tissue_boi</sprite>
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_restart</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\fnt_font</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player1</object>
     <object>objects\obj_player3</object>
@@ -32,9 +36,12 @@
     <object>objects\obj_tissue</object>
     <object>objects\obj_wall__small</object>
     <object>objects\obj_timer</object>
+    <object>objects\obj_display_winner</object>
+    <object>objects\obj_restart</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rom_game</room>
+    <room>rooms\rom_end</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
