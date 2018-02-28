@@ -31,6 +31,7 @@
     <object>objects\obj_sock</object>
     <object>objects\obj_tissue</object>
     <object>objects\obj_wall__small</object>
+    <object>objects\obj_timer</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rom_game</room>

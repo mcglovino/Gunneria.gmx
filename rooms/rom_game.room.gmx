@@ -127,6 +127,7 @@
     <instance objName="obj_tissue" x="864" y="384" name="inst_B54DF415" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tissue" x="608" y="128" name="inst_3BB62F98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tissue" x="416" y="384" name="inst_AE3B68D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_timer" x="64" y="224" name="inst_F29B3BAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
