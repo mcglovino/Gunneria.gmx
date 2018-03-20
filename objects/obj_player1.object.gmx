@@ -101,16 +101,27 @@ timer -= 1;
 
 if(timer == 0)
 {
-bullet = instance_create(x, y, obj_bullet);
-bullet.damage = damage;
-bullet.player = 1;
-with (bullet){
-    hor = gamepad_axis_value(0, gp_axisrh);
-    ver = gamepad_axis_value(0, gp_axisrv);
-    direction= point_direction(x, y, mouse_x, mouse_y);
-}
-
-timer = bulletspawnwait;
+    if(weapon = 4)
+    {
+        bullet = instance_create(x, y, obj_spray);
+    }
+    else if(weapon = 5)
+    {
+        bullet = instance_create(x, y, obj_rocket);
+    }
+    else
+    {
+        bullet = instance_create(x, y, obj_bullet);
+    }
+    bullet.damage = damage;
+    bullet.player = 1;
+    with (bullet){
+        hor = gamepad_axis_value(0, gp_axisrh);
+        ver = gamepad_axis_value(0, gp_axisrv);
+        direction= point_direction(x, y, mouse_x, mouse_y);
+    }
+    
+    timer = bulletspawnwait;
 }
 
 if(hp &lt;= 0){
@@ -149,6 +160,16 @@ switch (weapon){
     //sniper
     bulletspawnwait = 20;
     damage = 7;
+    break;
+    case 4:
+    //spray
+    bulletspawnwait = 30;
+    damage = 2;
+    break;
+    case 5:
+    //rocket
+    bulletspawnwait = 30;
+    damage = 5;
     break;
 }
 

@@ -102,7 +102,18 @@ timer -= 1;
 
 if(timer == 0)
 {
-bullet = instance_create(x, y, obj_bullet);
+if(weapon = 4)
+    {
+        bullet = instance_create(x, y, obj_spray);
+    }
+    else if(weapon = 5)
+    {
+        bullet = instance_create(x, y, obj_rocket);
+    }
+    else
+    {
+        bullet = instance_create(x, y, obj_bullet);
+    }
 bullet.damage = damage;
 bullet.player = 3;
 with (bullet){
@@ -149,6 +160,16 @@ switch (weapon){
     //sniper
     bulletspawnwait = 20;
     damage = 7;
+    break;
+    case 4:
+    //spray
+    bulletspawnwait = 30;
+    damage = 2;
+    break;
+    case 5:
+    //rocket
+    bulletspawnwait = 30;
+    damage = 5;
     break;
 }
 

@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>global.winner = 0;
 
-alarm[0] = 10*room_speed;
+alarm[0] = 60*room_speed;
 </string>
           </argument>
         </arguments>
