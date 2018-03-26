@@ -97,7 +97,7 @@ room_goto(1);
           <argument>
             <kind>1</kind>
             <string>draw_set_font(fnt_font)
-draw_text(room_width/2 - 150, room_height/2 - 325, "Game ends in ["+ string(round(alarm[0]/room_speed)) +"] seconds");
+draw_text(room_width/2 - 125, room_height - 230, "Game ends in ["+ string(round(alarm[0]/room_speed)) +"] seconds");
 //draw_text(room_width/2, room_height/2, "test");
 </string>
           </argument>

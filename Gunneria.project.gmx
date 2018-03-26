@@ -16,6 +16,7 @@
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_restart</sprite>
     <sprite>sprites\spr_rocket</sprite>
+    <sprite>sprites\spr_GUI</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -44,6 +45,7 @@
     <object>objects\obj_timer</object>
     <object>objects\obj_display_winner</object>
     <object>objects\obj_restart</object>
+    <object>objects\GUI</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rom_game</room>

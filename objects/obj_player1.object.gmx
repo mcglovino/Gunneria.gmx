@@ -141,8 +141,8 @@ if(hp &lt;= 0){
             break;
     }
     hp = 20;
-    x = 128;
-    y = 96;
+    x = 192;
+    y = 60;
 }
 
 switch (weapon){
@@ -249,8 +249,33 @@ if(place_free(x+hor_move,y+ver_move)){
             <kind>1</kind>
             <string>///drawtext
 draw_self();
-draw_text(x + 5, y + 25, hp);
-draw_text(x - 25, y + 25, kills);
+draw_text(x, y + 25, hp);
+//draw_text(x - 25, y + 25, kills);
+draw_set_colour(c_white);
+draw_text(736, 970, kills);
+
+switch (weapon){
+    case 1:
+    //pistol
+    draw_text(736, 990, "Pistol");
+    break;
+    case 2:
+    //machine gun
+    draw_text(736, 990, "Machine Gun");
+    break;
+    case 3:
+    //sniper
+    draw_text(736, 990, "Sniper");
+    break;
+    case 4:
+    //spray
+    draw_text(736, 990, "Smegma Spray");
+    break;
+    case 5:
+    //rocket
+    draw_text(736, 990, "Rocket Launcher");
+    break;
+}
 </string>
           </argument>
         </arguments>
