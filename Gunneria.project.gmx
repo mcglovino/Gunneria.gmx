@@ -17,6 +17,7 @@
     <sprite>sprites\spr_restart</sprite>
     <sprite>sprites\spr_rocket</sprite>
     <sprite>sprites\spr_GUI</sprite>
+    <sprite>sprites\spr_trench</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -46,6 +47,7 @@
     <object>objects\obj_display_winner</object>
     <object>objects\obj_restart</object>
     <object>objects\GUI</object>
+    <object>objects\obj_trench</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rom_game</room>

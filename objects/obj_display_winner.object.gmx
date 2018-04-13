@@ -29,12 +29,18 @@
 
 if(global.winner != 0)
 {
-    draw_text(room_width/2 - 150, room_height/2, "Player [" +string(global.winner) +"] won");
+    draw_text(room_width/2 - 50, room_height/2 - 100, "Player [" +string(global.winner) +"] won");
 }
 else
 {
-    draw_text(room_width/2 - 150, room_height/2, "Nobody won, try again!");
+    draw_text(room_width/2 - 50, room_height/2 - 100, "Its a draw!");
 }
+
+draw_text(room_width/2 - 300, room_height/2 + 90, "KILLS");
+draw_text(room_width/2 - 300, room_height/2 + 120, "Player 1 :" +string(global.p1kills));
+draw_text(room_width/2 - 300, room_height/2 + 150, "Player 2 :" +string(global.p2kills));
+draw_text(room_width/2 - 300, room_height/2 + 180, "Player 3 :" +string(global.p3kills));
+draw_text(room_width/2 - 300, room_height/2 + 210, "Player 4 :" +string(global.p4kills));
 </string>
           </argument>
         </arguments>
