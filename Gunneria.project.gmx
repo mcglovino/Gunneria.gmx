@@ -14,12 +14,16 @@
     <sprite>sprites\spr_veiny_big</sprite>
     <sprite>sprites\spr_tissue_boi</sprite>
     <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_restart</sprite>
+    <sprite>sprites\spr_button</sprite>
     <sprite>sprites\spr_rocket</sprite>
     <sprite>sprites\spr_GUI</sprite>
     <sprite>sprites\spr_trench</sprite>
+    <sprite>sprites\spr_edge</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bck_red</background>
+    <background>background\bck_blue</background>
+  </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\fnt_font</font>
@@ -46,10 +50,19 @@
     <object>objects\obj_timer</object>
     <object>objects\obj_display_winner</object>
     <object>objects\obj_restart</object>
+    <object>objects\obj_menu</object>
+    <object>objects\obj_1min</object>
+    <object>objects\obj_10sec</object>
+    <object>objects\obj_2min</object>
+    <object>objects\obj_3min</object>
+    <object>objects\obj_bluebck</object>
+    <object>objects\obj_redbck</object>
     <object>objects\GUI</object>
     <object>objects\obj_trench</object>
+    <object>objects\obj_edge</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rom_menu</room>
     <room>rooms\rom_game</room>
     <room>rooms\rom_end</room>
   </rooms>

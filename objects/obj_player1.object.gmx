@@ -41,6 +41,10 @@ weapon = 1;
 damage = 4;
 hp = 20;
 shot_by = 0;
+
+startx = x;
+starty = y
+
 global.p1kills = 0;
 
 bulletspawnwait = 10;
@@ -141,8 +145,8 @@ if(hp &lt;= 0){
             break;
     }
     hp = 20;
-    x = 192;
-    y = 60;
+    x = startx;
+    y = starty;
 }
 
 switch (weapon){

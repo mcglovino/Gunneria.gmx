@@ -26,9 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>global.winner = 0;
-global.gamelen = 60;
 
 alarm[0] = global.gamelen*room_speed;
+
+if (global.background = 1){
+    background_index[0] = bck_blue;
+}
+else if (global.background = 1){
+    background_index[0] = bck_red;
+}
 </string>
           </argument>
         </arguments>
@@ -72,7 +78,7 @@ else
     global.winner = 0;
 }
 
-room_goto(1);
+room_goto(2);
 
 //game_end();
 </string>

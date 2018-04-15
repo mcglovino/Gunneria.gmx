@@ -28,7 +28,7 @@
             <string>draw_self();
 
 sprite_index = spr_button;
-image_index = 0;
+image_index = 2;
 image_speed = 0;
 </string>
           </argument>
@@ -52,7 +52,8 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(1);
+            <string>global.gamelen = 10;
+room_goto(1);
 </string>
           </argument>
         </arguments>
