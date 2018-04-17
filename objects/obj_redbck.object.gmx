@@ -52,7 +52,7 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.background = 2;
+            <string>global.map = 2;
 </string>
           </argument>
         </arguments>

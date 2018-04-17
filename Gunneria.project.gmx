@@ -55,6 +55,7 @@
     <object>objects\obj_10sec</object>
     <object>objects\obj_2min</object>
     <object>objects\obj_3min</object>
+    <object>objects\obj_go</object>
     <object>objects\obj_bluebck</object>
     <object>objects\obj_redbck</object>
     <object>objects\GUI</object>
@@ -64,6 +65,7 @@
   <rooms name="rooms">
     <room>rooms\rom_menu</room>
     <room>rooms\rom_game</room>
+    <room>rooms\rom_game2</room>
     <room>rooms\rom_end</room>
   </rooms>
   <help>

@@ -53,7 +53,6 @@ image_speed = 0;
           <argument>
             <kind>1</kind>
             <string>global.gamelen = 120;
-room_goto(1);
 </string>
           </argument>
         </arguments>
