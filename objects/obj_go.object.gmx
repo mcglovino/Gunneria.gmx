@@ -30,6 +30,9 @@
 sprite_index = spr_button;
 image_index = 7;
 image_speed = 0;
+
+global.map = 1;
+global.gamelen = 60;
 </string>
           </argument>
         </arguments>

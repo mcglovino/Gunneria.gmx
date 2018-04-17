@@ -70,6 +70,8 @@ bullet.player = player;
 bullet = instance_create(x, y, obj_fragment);
 bullet.damage = 1;
 bullet.player = player;
+
+    audio_play_sound(snd_clap, 2, false);
 </string>
           </argument>
         </arguments>
@@ -119,6 +121,8 @@ bullet.player = player;
 bullet = instance_create(x, y, obj_fragment);
 bullet.damage = 1;
 bullet.player = player;
+
+    audio_play_sound(snd_clap, 2, false);
 </string>
           </argument>
         </arguments>
@@ -168,6 +172,8 @@ bullet.player = player;
 bullet = instance_create(x, y, obj_fragment);
 bullet.damage = 1;
 bullet.player = player;
+
+    audio_play_sound(snd_clap, 2, false);
 </string>
           </argument>
         </arguments>
@@ -217,6 +223,8 @@ bullet.player = player;
 bullet = instance_create(x, y, obj_fragment);
 bullet.damage = 1;
 bullet.player = player;
+
+    audio_play_sound(snd_clap, 2, false);
 </string>
           </argument>
         </arguments>
@@ -266,6 +274,8 @@ bullet.player = player;
 bullet = instance_create(x, y, obj_fragment);
 bullet.damage = 1;
 bullet.player = player;
+
+    audio_play_sound(snd_clap, 2, false);
 </string>
           </argument>
         </arguments>
@@ -315,6 +325,8 @@ bullet.player = player;
 bullet = instance_create(x, y, obj_fragment);
 bullet.damage = 1;
 bullet.player = player;
+
+    audio_play_sound(snd_clap, 2, false);
 </string>
           </argument>
         </arguments>
@@ -408,6 +420,7 @@ bullet.player = player;
             <kind>1</kind>
             <string>if(player != 4)
 {
+    audio_play_sound(snd_clap, 2, false);
     //make fragments
     bullet = instance_create(x, y, obj_fragment);
     bullet.damage = 1;
@@ -424,6 +437,7 @@ bullet.player = player;
     other.hp -= damage;
     other.shot_by = player; 
     instance_destroy();
+
 }
 </string>
           </argument>
@@ -449,6 +463,7 @@ bullet.player = player;
             <kind>1</kind>
             <string>if(player != 3)
 {
+    audio_play_sound(snd_clap, 2, false);
     //make fragments
     bullet = instance_create(x, y, obj_fragment);
     bullet.damage = 1;
@@ -465,6 +480,7 @@ bullet.player = player;
     other.hp -= damage;
     other.shot_by = player; 
     instance_destroy();
+
 }
 </string>
           </argument>
@@ -490,6 +506,7 @@ bullet.player = player;
             <kind>1</kind>
             <string>if(player != 1)
 {
+    audio_play_sound(snd_clap, 2, false);
     //make fragments
     bullet = instance_create(x, y, obj_fragment);
     bullet.damage = 1;

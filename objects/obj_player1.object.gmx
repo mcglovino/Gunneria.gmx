@@ -105,17 +105,21 @@ timer -= 1;
 
 if(timer == 0)
 {
+    
     if(weapon = 4)
     {
         bullet = instance_create(x, y, obj_spray);
+        audio_play_sound(snd_boom, 2, false);
     }
     else if(weapon = 5)
     {
         bullet = instance_create(x, y, obj_rocket);
+        audio_play_sound(snd_boom, 2, false);
     }
     else
     {
         bullet = instance_create(x, y, obj_bullet);
+        audio_play_sound(snd_pew, 3, false);
     }
     bullet.damage = damage;
     bullet.player = 1;
@@ -129,6 +133,7 @@ if(timer == 0)
 }
 
 if(hp &lt;= 0){
+    audio_play_sound(snd_death, 1, false);
     switch(shot_by)
     {
         case 1:
