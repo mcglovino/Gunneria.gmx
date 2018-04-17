@@ -71,7 +71,7 @@ else
     global.winner = 0;
 }
 
-room_goto(2);
+room_goto(3);
 
 //game_end();
 </string>

@@ -52,7 +52,7 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(1);
+            <string>room_goto(global.map);
 </string>
           </argument>
         </arguments>
