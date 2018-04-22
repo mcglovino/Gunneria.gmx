@@ -255,7 +255,7 @@ if(place_free(x+hor_move,y+ver_move)){
             <string>///drawtext
 draw_self();
 draw_text(x, y + 25, hp);
-//draw_text(x - 25, y + 25, kills);
+//draw_text(x - 25, y + 25, global.p2kills);
 draw_set_colour(c_white);
 draw_text(915, 970, global.p2kills);
 
