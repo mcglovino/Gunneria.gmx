@@ -150,6 +150,7 @@ if(hp &lt;= 0){
             break;
     }
     hp = 20;
+    weapon = 1;
     x = startx;
     y = starty;
 }

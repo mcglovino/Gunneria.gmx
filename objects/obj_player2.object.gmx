@@ -145,6 +145,7 @@ switch(shot_by)
             break;
     }
     hp = 20;
+    weapon = 1;
     x = 192;
     y = 928;
 }
